@@ -1,4 +1,4 @@
-@extends('frontend.layouts.master')
+@extends('FrontEnd.layouts.master')
 
 @section('content')
     <section class="hero" style="background-image: url('{{asset('frontend/assets')}}/images/background/solar-panels.png')">
