@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\FrontEnd\IndexController;
+use App\Http\Controllers\FrontEnd\PagesController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [IndexController::class, 'index'])->name('index');
+
+Route::get('about-panels', [PagesController::class, 'aboutPanels'])->name('about-panels');
+Route::get('calculator', [PagesController::class, 'calculator'])->name('calculator');
+Route::get('our-company', [PagesController::class, 'ourCompany'])->name('our-company');
+Route::get('our-projects', [PagesController::class, 'ourProjects'])->name('our-projects');
