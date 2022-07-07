@@ -1,4 +1,4 @@
-@extends('frontend.layouts.master')
+@extends('FrontEnd.layouts.master')
 
 @section('content')
     <section class="solar-panel-calc">
