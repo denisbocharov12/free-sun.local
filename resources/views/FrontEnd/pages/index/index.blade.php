@@ -4,10 +4,7 @@
     <section class="hero" style="background-image: url('{{asset('frontend/assets')}}/images/background/solar-panels.png')">
         <div class="fullwidth-container">
             <h1 class="hero__title h1">
-                Солнечные панели на любой вкус
-                <span>
-                Самые дешевые солнечные панели во всей Молдове
-              </span>
+                Солнечные электростанции под ключ
             </h1>
             <div class="hero__row">
                 <ul class="benefits">
@@ -16,7 +13,7 @@
                     $
                   </span>
                         <span class="benefits__text">
-                    Гарантированная низкая цена
+                    Доступная цена
                   </span>
                     </li>
 
@@ -25,20 +22,19 @@
                     25
                   </span>
                         <span class="benefits__text">
-                    Лет гарантии на каждую панель
+                    Лет гарантии
                   </span>
                     </li>
-
                     <li class="benefits__item">
                   <span class="benefits__title">
                     24/7
                   </span>
                         <span class="benefits__text">
-                    Мониторинг потребляемой энергии
+                    Мониторинг выроботки
                   </span>
                     </li>
                 </ul>
-                <a class="hero__link order-btn" href="#">
+                <a class="hero__link order-btn" href="javascript:;" data-fancybox data-src="#ModalContacts" data-options='{"touch" : false}'>
                     <span>Заказать сейчас</span>
                 </a>
             </div>
@@ -50,25 +46,19 @@
             <div class="double-section-main__wrapper">
                 <div class="double-section-main__body">
                     <div class="double-section-main__inner">
-                        <p>Экономичность</p>
+                        <p>Солнечные электростанции</p>
                         <h2 class="double-section-main__title h2">
-                            Электричество дешевле
+                            Промышленный сектор
                         </h2>
                         <div class="double-section-main__text">
                             <p>
-                                Бесплатное электричество. Сразу после установки и пуска домашней солнечной электростанции вам
-                                уже
-                                не
-                                нужно будет оплачивать счета за электроэнергию, ведь ее подарит солнце.
-                                Экономьте вместе с
-                                <a class="double-section-main__text-link" href="#">
-                                    Free Sun.
-                                </a>
+                                Существует немало способов сделать производство более эффективным. Одним из наиболее простых и действенных решений является перевод бизнеса на солнечную энергию.
+                                Промышленная солнечная электростанция позволит вашему предприятию обрести полную энергетическую независимость.
                             </p>
                         </div>
                     </div>
-                    <a class="economy__link order-btn" href="#">
-                        <span>Заказать</span>
+                    <a class="economy__link order-btn" href="{{route('catalog.category', 1)}}">
+                        <span>Больше</span>
                     </a>
 
                 </div>
@@ -82,31 +72,21 @@
             <div class="double-section-main__wrapper">
                 <div class="double-section-main__body">
                     <div class="double-section-main__inner">
-                        <p>Дизайн</p>
+                        <p>Солнечные электростанции</p>
                         <h3 class="double-section-main__title h2">
-                            Гладкий и прочный
+                            Частный сектор
                         </h3>
                         <div class="double-section-main__text">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl vel ornare morbi porttitor nunc.
-                                Urna,
-                                facilisis eget consectetur consequat dignissim facilisis eu nunc. Elit neque rhoncus nulla sed
-                                urna.
-                                Quisque nulla nisl
-                                <a class="double-section-main__text-link" href="#">
-                                    Free Sun
-                                </a>
-                                turpis.
+                                Солнечные батареи для частного дома – наилучший на данный момент способ обеспечить себя экологичным электричеством и не зависеть от постоянного роста тарифов.
+                                Сразу после установки и пуска домашней солнечной электростанции вам уже не нужно будет оплачивать счета за электроэнергию, ведь ее подарит солнце.
+                                Экономьте вместе с FreeSun.
                             </p>
                         </div>
                     </div>
                     <div class="design__row">
-                        <button class="design__button" type="button">
-                            <span></span>
-                            Узнать больше
-                        </button>
-                        <a class="design__link order-btn" href="#">
-                            <span>Заказать</span>
+                        <a class="design__link order-btn" href="{{route('catalog.category', 2)}}">
+                            <span>Больше</span>
                         </a>
                     </div>
                 </div>
@@ -121,29 +101,27 @@
             <div class="smart-wall__body">
                 <div class="smart-wall__inner">
                     <p class="smart-wall__subtitle">
-                        Умная стена
+                        Онлайн-калькулятор
                     </p>
                     <h2 class="smart-wall__title h2">
-                        Домашняя резервная батарея
+                        Солнечной электростанции
                     </h2>
                     <ul class="smart-wall__links">
                         <li class="smart-wall__item">
-                            <a class="smart-wall__link order-btn" href="#">
-                                <span>Заказать</span>
+                            <a class="smart-wall__link order-btn" href="{{route('calculator')}}">
+                                <span>Рассчитать</span>
                             </a>
                         </li>
                         <li class="smart-wall__item">
-                            <a class="smart-wall__link order-btn" href="#">
-                                Узнать больше
+                            <a class="smart-wall__link order-btn" href="javascript:;" data-fancybox data-src="#ModalContacts" data-options='{"touch" : false}'>
+                                Получить оферту
                             </a>
                         </li>
                     </ul>
                 </div>
                 <div class="smart-wall__text">
                     <p>
-                        Lorem ipsum - dolor sit amet, consectetur adipiscing elit. Id ipsum hendrerit ultrices aliquet
-                        lectus
-                        nulla penatibus.
+                        Наш онлайн-калькулятор, поможет вам рассчитать необходимую мощность солнечной электростанции, подходящей для вашего дома, в зависимости от того, сколько вы хотите компенсировать из своих счетов за электроэнергию и отопление.
                     </p>
                 </div>
             </div>
@@ -156,65 +134,69 @@
             </h3>
             <div class="solar-panel-specifications__wrapper">
                 <div class="solar-panel-specifications__body">
-                    <div class="solar-panel-specifications__img"></div>
+                    <img
+                        class="solar-panel-specifications__img"
+                        src="{{asset('frontend/assets')}}/images/content/s-panel.png"
+                        alt="Солнечная панель"
+                        width="635"
+                        height="660px"
+                    />
                     <div class="specifications">
                         <p class="specifications__title h3">
                             Характеристики
                         </p>
                         <ul class="specifications__list">
                             <li class="specifications__item">
-                                <p class="specifications__name">Wattage</p>
+                                <p class="specifications__name">Мощность
+                                </p>
                                 <p class="specifications__desc">
-                                    400 W
+                                    410 Вт
                                 </p>
                             </li>
                             <li class="specifications__item">
                                 <p class="specifications__name">
-                                    Operating Temperature
+                                    Вес
                                 </p>
                                 <p class="specifications__desc">
-                                    -40°F up to +185°F
+                                    -до 21.5 кг
                                 </p>
                             </li>
                             <li class="specifications__item">
                                 <p class="specifications__name">
-                                    Dimensions
+                                    Размеры
                                 </p>
                                 <p class="specifications__desc">
-                                    74.4" x 41.2" x 1.57"<br>(including frame)
-                                </p>
-                            </li>
-                            <li class="specifications__item">
-                                <p class="specifications__name">Design</p>
-                                <p class="specifications__desc">
-                                    Black anodized aluminum <br>alloy frame<br>
-                                    Black solar cells and <br>backsheet
+                                    1724 x 1134 x 30 мм
+                                    <br>(включая рамки)
                                 </p>
                             </li>
                             <li class="specifications__item">
-                                <p class="specifications__name">Warranty</p>
+                                <p class="specifications__name">Количество ячеек</p>
                                 <p class="specifications__desc">
-                                    25-year performance <br>guarantee
+                                    108 (12 x 9) I 182x91 мм
                                 </p>
                             </li>
                             <li class="specifications__item">
-                                <p class="specifications__name">Certifications</p>
+                                <p class="specifications__name">Технологии</p>
                                 <p class="specifications__desc">
-                                    IEC / UL 61730,<br>
-                                    CEC Listed,<br>
-                                    IEC 61215
+                                    Высокая производительность при слабом освещении.<br>
+                                    Работает в пасмурные, дождливые дни
                                 </p>
                             </li>
                             <li class="specifications__item">
-                                <p class="specifications__name">Inverter Dimension</p>
+                                <p class="specifications__name">Рабочая температура
+                                </p>
                                 <p class="specifications__desc">
-                                    26" x 16" x 6"
+                                    - 40 to +85°C
                                 </p>
                             </li>
                             <li class="specifications__item">
-                                <p class="specifications__name">Inverter Warranty</p>
+                                <p class="specifications__name">Гарантия</p>
                                 <p class="specifications__desc">
-                                    20 years
+                                    Не менее 97% номинальной мощности в течение первого года.<br>
+                                    После этого макс. деградация 0,5086% в год.<br>
+                                    Не менее 86,83% номинальной мощности до 20 лет.<br>
+                                    Не менее 81,75% номинальной мощности до 30 лет.<br>
                                 </p>
                             </li>
                         </ul>
@@ -236,12 +218,12 @@
                         </p>
                         <ul class="last-sentence__links">
                             <li class="last-sentence__item">
-                                <a class="last-sentence__link order-btn" href="#">
+                                <a class="last-sentence__link order-btn" href="javascript:;" data-fancybox data-src="#ModalContacts" data-options='{"touch" : false}'>
                                     <span>Заказать</span>
                                 </a>
                             </li>
                             <li class="last-sentence__item">
-                                <a class="last-sentence__link order-btn" href="#">
+                                <a class="last-sentence__link order-btn" href="{{route('about-us')}}">
                                     Узнать больше
                                 </a>
                             </li>

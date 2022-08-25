@@ -4,7 +4,7 @@
     <section class="about-panels">
         <div class="fixed-container">
             <h1 class="about-panels__title h2">
-                Солнечные панели 15КВТ. в г.Кишинев ул.Измаил
+
             </h1>
             <div class="about-panels__wrapper">
                 <div class="about-panels-slider swiper">

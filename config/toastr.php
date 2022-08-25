@@ -24,5 +24,10 @@ return array(
     */
 
     'options' => array(
+        'closeButton' => true,
+        'debug' => false,
+        'newestOnTop' => false,
+        'progressBar' => false,
+        "positionClass" =>"toast-bottom-right",
     ),
 );

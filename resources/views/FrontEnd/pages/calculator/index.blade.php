@@ -10,21 +10,40 @@
                 <div class="range-slider">
                     <label
                         class="range-slider__label calc-label"
-                        for="range-slider"
+                        for="monthly_electricity"
                     >
                         Ежемесячный счет за электроэнергию (MDL)
                     </label>
                     <input
                         class="range-slider__input"
-                        id="range-slider"
+                        id="monthly_electricity"
                         type="text"
-                        name="range-slider"
-                        value="540"
+                        name="monthly_electricity"
+                        value="710"
                         data-min="0"
-                        data-max="1500"
-                        data-from="540"
+                        data-max="100000"
+                        data-from="710"
                     />
-                    <span class="range-slider__value"></span>
+                    <span class="range-slider__value" id="monthly_electricity_value"></span>
+                </div>
+                <div class="range-slider">
+                    <label
+                        class="range-slider__label calc-label"
+                        for="heated_area"
+                    >
+                        Отапливаемая площадь (М.КВ)
+                    </label>
+                    <input
+                        class="range-slider__input"
+                        id="heated_area"
+                        type="text"
+                        name="heated_area"
+                        value="78"
+                        data-min="0"
+                        data-max="2000"
+                        data-from="78"
+                    />
+                    <span class="range-slider__value" id="heated_area_value"></span>
                 </div>
                 <div class="solar-panel-calc__body">
                     <p class="solar-panel-calc__text">
@@ -36,31 +55,31 @@
                             <li class="solar-panel-calc__item">
                                 <label
                                     class="solar-panel-calc__label calc-label"
-                                    for="1"
+                                    for="required_power"
                                 >
-                                    Ежедневно используемое электричество
+                                    Требуемая мощность солнечной станции (кВт)
                                 </label>
                                 <input
                                     class="solar-panel-calc__input"
                                     type="text"
-                                    id="1"
-                                    name="Daily electricity used"
-                                    value="35kWn"
+                                    id="required_power"
+                                    name="required_power"
+                                    value="35"
                                 />
                             </li>
                             <li class="solar-panel-calc__item">
                                 <label
                                     class="solar-panel-calc__label calc-label"
-                                    for="2"
+                                    for="required_qty"
                                 >
-                                    Потребляемая электроэнергия в месяц
+                                    Требуемое количество солнечных панелей (шт.)
                                 </label>
                                 <input
                                     class="solar-panel-calc__input"
                                     type="text"
-                                    id="2"
-                                    name="Consumed electricity per month"
-                                    value="1063 kWn"
+                                    id="required_qty"
+                                    name="required_qty"
+                                    value="1063"
                                 />
                             </li>
                             <li class="solar-panel-calc__item">
@@ -68,14 +87,14 @@
                                     class="solar-panel-calc__label calc-label"
                                     for="3"
                                 >
-                                    Электроэнергия, используемая ежегодно
+                                    Необходимая площадь на крыше (м.кв)
                                 </label>
                                 <input
                                     class="solar-panel-calc__input"
                                     type="text"
-                                    id="3"
-                                    name="Electricity used annually"
-                                    value="12376 kWn"
+                                    id="required_area_roof"
+                                    name="required_area_roof"
+                                    value="12376"
                                 />
                             </li>
                         </ul>
@@ -83,69 +102,198 @@
                             <li class="solar-panel-calc__item">
                                 <label
                                     class="solar-panel-calc__label calc-label"
-                                    for="4"
+                                    for="required_area_earth"
                                 >
-                                    Номинальная мощность фотоэл.системы
+                                    Необходимая площадь на земле (м.кв)
                                 </label>
                                 <input
                                     class="solar-panel-calc__input"
                                     type="text"
-                                    id="4"
-                                    name="Rated power of photovoltaic system"
-                                    value="10.2089 kWp"
-                                />
-                            </li>
-                            <li class="solar-panel-calc__item">
-                                <label
-                                    class="solar-panel-calc__label calc-label"
-                                    for="5"
-                                >
-                                    Требуемое количество солнечных панелей
-                                </label>
-                                <input
-                                    class="solar-panel-calc__input"
-                                    type="text"
-                                    id="5"
-                                    name="Required number of solar panels"
-                                    value="26 шт."
-                                />
-                            </li>
-                            <li class="solar-panel-calc__item">
-                                <label
-                                    class="solar-panel-calc__label calc-label"
-                                    for="6"
-                                >
-                                    Необходимая площать для установки
-                                </label>
-                                <input
-                                    class="solar-panel-calc__input"
-                                    type="text"
-                                    id="6"
-                                    name="Required area for installation"
-                                    value="46 mp."
-                                />
-                            </li>
-                        </ul>
-                        <ul class="solar-panel-calc__row">
-                            <li class="solar-panel-calc__item">
-                                <label
-                                    class="solar-panel-calc__label calc-label"
-                                    for="7"
-                                >
-                                    Количество CO2, не представляемого ежегодно
-                                </label>
-                                <input
-                                    class="solar-panel-calc__input"
-                                    type="text"
-                                    id="7"
-                                    name="Amount of CO2 not reported annually"
-                                    value="4011 kg."
+                                    id="required_area_earth"
+                                    name="required_area_earth"
+                                    value="10.2089"
                                 />
                             </li>
                         </ul>
                     </div>
                 </div>
             </form>
+            <div class="wrap_calculator_offer_btn">
+                <a id="calculator_offer_btn_add" class="order-btn" href="javascript:;" data-fancybox="" data-src="#CalculatorOffer" data-options="{'touch' : false}">
+                    Получить офферту
+                </a>
+            </div>
         </div>
     </section>
+@endsection
+@include('FrontEnd.ModalWindows.calculator')
+@section('scripts')
+    <script>
+        $(document).ready(function (){
+            $("#monthly_electricity").ionRangeSlider({
+                onStart: function (data) {
+                    $("#monthly_electricity_value").text(data.from);
+                },
+                onChange: function (data) {
+                    $("#monthly_electricity_value").text(data.from);
+                },
+                onFinish: function (){
+                    setTimeout(changeCalculatorValues, 100);
+                }
+            });
+
+            $("#heated_area").ionRangeSlider({
+                onStart: function (data) {
+                    $("#heated_area_value").text(data.from);
+
+                },
+                onChange: function (data) {
+                    $("#heated_area_value").text(data.from);
+                },
+                onFinish: function (){
+                    setTimeout(changeCalculatorValues, 100);
+                }
+            });
+        });
+        function changeCalculatorValues(){
+            var monthly_electricity = $('#monthly_electricity').val();
+            var heated_area = $('#heated_area').val();
+
+            var token = "{{csrf_token()}}";
+            var path = "{{route('calculator.change')}}";
+
+            $.ajax({
+                url: path,
+                type: "POST",
+                dataType:"JSON",
+                data:{
+                    monthly_electricity: monthly_electricity,
+                    heated_area: heated_area,
+                    _token: token
+                },
+                success:function (response) {
+                    if (response['status']){
+                        $('#required_power').val(response.result.required_power);
+                        $('#required_qty').val(response.result.required_qty);
+                        $('#required_area_roof').val(response.result.required_area_roof);
+                        $('#required_area_earth').val(response.result.required_area_earth);
+                    } else {
+                        toastr["info"](response['msg'])
+                        toastr.options = {
+                            "closeButton": false,
+                            "debug": false,
+                            "newestOnTop": false,
+                            "progressBar": true,
+                            "positionClass": "toast-bottom-right",
+                            "preventDuplicates": false,
+                            "onclick": null,
+                            "showDuration": "300",
+                            "hideDuration": "1000",
+                            "timeOut": "5000",
+                            "extendedTimeOut": "1000",
+                            "showEasing": "swing",
+                            "hideEasing": "linear",
+                            "showMethod": "fadeIn",
+                            "hideMethod": "fadeOut"
+                        }
+                    }
+                },
+                error: function (err){
+                    if(err.status == 422){
+                        $.each(err.responseJSON.errors, function (i, error) {
+                            var el = $(document).find('[name="'+i+'"]');
+                            el.after($('<span style="text-align: center; color: red; font-size: 12px; margin-top: 3px">'+error[0]+'</span>'));
+                        });
+                    }
+                }
+            });
+        }
+        $(document).on('click','#calculator_offer_btn',function (e) {
+            e.preventDefault();
+
+            var monthly_electricity = $('#monthly_electricity').val();
+            var heated_area = $('#heated_area').val();
+            var required_power = $('#required_power').val();
+            var required_qty = $('#required_qty').val();
+            var required_area_roof = $('#required_area_roof').val();
+            var required_area_earth = $('#required_area_earth').val();
+
+            var offer_name_surname = $('#offer_name_surname').val();
+            var offer_phone = $('#offer_phone').val();
+            var offer_email = $('#offer_email').val();
+            var offer_comment = $('#offer_comment').val();
+
+            var token = "{{csrf_token()}}";
+            var path = "{{route('calculator.offer')}}";
+
+            $.ajax({
+                url: path,
+                type: "POST",
+                dataType:"JSON",
+                data:{
+                    monthly_electricity: monthly_electricity,
+                    heated_area: heated_area,
+                    required_power: required_power,
+                    required_qty: required_qty,
+                    required_area_roof: required_area_roof,
+                    required_area_earth: required_area_earth,
+                    offer_name_surname: offer_name_surname,
+                    offer_phone: offer_phone,
+                    offer_email: offer_email,
+                    offer_comment: offer_comment,
+                    _token: token
+                },
+                success:function (response) {
+                    if (response['status']){
+                        $('.fancybox-button').click();
+                        toastr["success"](response['msg'])
+                        toastr.options = {
+                            "closeButton": false,
+                            "debug": false,
+                            "newestOnTop": false,
+                            "progressBar": true,
+                            "positionClass": "toast-bottom-right",
+                            "preventDuplicates": false,
+                            "onclick": null,
+                            "showDuration": "300",
+                            "hideDuration": "1000",
+                            "timeOut": "5000",
+                            "extendedTimeOut": "1000",
+                            "showEasing": "swing",
+                            "hideEasing": "linear",
+                            "showMethod": "fadeIn",
+                            "hideMethod": "fadeOut"
+                        }
+                    } else {
+                        toastr["info"](response['msg'])
+                        toastr.options = {
+                            "closeButton": false,
+                            "debug": false,
+                            "newestOnTop": false,
+                            "progressBar": true,
+                            "positionClass": "toast-bottom-right",
+                            "preventDuplicates": false,
+                            "onclick": null,
+                            "showDuration": "300",
+                            "hideDuration": "1000",
+                            "timeOut": "5000",
+                            "extendedTimeOut": "1000",
+                            "showEasing": "swing",
+                            "hideEasing": "linear",
+                            "showMethod": "fadeIn",
+                            "hideMethod": "fadeOut"
+                        }
+                    }
+                },
+                error: function (err){
+                    if(err.status == 422){
+                        $.each(err.responseJSON.errors, function (i, error) {
+                            var el = $(document).find('[name="'+i+'"]');
+                            el.after($('<span style="text-align: center; color: red; font-size: 12px; margin-top: 3px">'+error[0]+'</span>'));
+                        });
+                    }
+                }
+            });
+        });
+    </script>
 @endsection

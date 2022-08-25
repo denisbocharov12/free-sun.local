@@ -15,6 +15,11 @@ class CreateProjectDataModelsTable extends Migration
     {
         Schema::create('project_data_models', function (Blueprint $table) {
             $table->id();
+            $table->float('cost_electro_before')->nullable()->default(null);
+            $table->float('cost_electro_after')->nullable()->default(null);
+            $table->float('cost_otoplen_before')->nullable()->default(null);
+            $table->float('cost_otoplen_after')->nullable()->default(null);
+            $table->float('conservation')->nullable()->default(null);
             $table->timestamps();
         });
     }

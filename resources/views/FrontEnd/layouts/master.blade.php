@@ -10,7 +10,7 @@
         </main>
     </div>
     @include('FrontEnd.layouts.template_components.nav_slide')
-    @include('FrontEnd.layouts.template_components.chat')
+{{--    @include('FrontEnd.layouts.template_components.chat')--}}
     @include('FrontEnd.layouts.footer')
 </div>
 @include('FrontEnd.layouts.layout_components.script')

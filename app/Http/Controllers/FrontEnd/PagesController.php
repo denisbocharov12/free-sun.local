@@ -10,13 +10,14 @@ class PagesController extends Controller
     public function aboutPanels(){
         return view('FrontEnd.pages.about-panels.index');
     }
-    public function calculator(){
-        return view('FrontEnd.pages.calculator.index');
-    }
-    public function ourCompany(){
+
+    public function aboutUs(){
         return view('FrontEnd.pages.our-company.index');
     }
-    public function ourProjects(){
-        return view('FrontEnd.pages.our-projects.index');
+    public function contacts(){
+        return view('FrontEnd.pages.contacts.index');
+    }
+    public function blog(){
+        return view('FrontEnd.Blog.index');
     }
 }
